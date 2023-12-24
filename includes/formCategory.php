@@ -5,12 +5,12 @@ session_start();
 function calculate_reservation() {
     if (isset($_POST['vehicle_index']) && isset($_SESSION['reservation'])) {
         $vehicles = array(
-            array('image' => 'assets/images/grupa-a.png', 'cars' => 'Kwid, Uno, Mobi ou similar', 'category' => 'Grupo A - Hatch Compacto', 'price' => 190.89),
-            array('image' => 'assets/images/grupo-b.png', 'cars' => 'Argo, Onix, HB20 ou similar', 'category' => 'Grupo B - Hatch', 'price' => 220.55),
-            array('image' => 'assets/images/grupo-c.png', 'cars' => 'Cronos, Onix plus, HB20s ou similar', 'category' => 'Grupo C - Sedan', 'price' => 280.55),
-            array('image' => 'assets/images/grupo-d.png', 'cars' => 'Renegade, Duster, Creta ou similar', 'category' => 'Grupo D - SUV', 'price' => 350.55),
-            array('image' => 'assets/images/grupo-e.png', 'cars' => 'Chevrolet Spin ou Fiat Doblò', 'category' => 'Grupo E - Mini Van', 'price' => 350.55),
-            array('image' => 'assets/images/grupo-f.png', 'cars' => 'S10, Ranger, Hillux ou similar', 'category' => 'Grupo F - 4x4', 'price' => 450.55),
+            array('image' => '../assets/images/grupa-a.png', 'cars' => 'Kwid, Uno, Mobi ou similar', 'category' => 'Grupo A - Hatch Compacto', 'price' => 190.89),
+            array('image' => '../assets/images/grupo-b.png', 'cars' => 'Argo, Onix, HB20 ou similar', 'category' => 'Grupo B - Hatch', 'price' => 220.55),
+            array('image' => '../assets/images/grupo-c.png', 'cars' => 'Cronos, Onix plus, HB20s ou similar', 'category' => 'Grupo C - Sedan', 'price' => 280.55),
+            array('image' => '../assets/images/grupo-d.png', 'cars' => 'Renegade, Duster, Creta ou similar', 'category' => 'Grupo D - SUV', 'price' => 350.55),
+            array('image' => '../assets/images/grupo-e.png', 'cars' => 'Chevrolet Spin ou Fiat Doblò', 'category' => 'Grupo E - Mini Van', 'price' => 350.55),
+            array('image' => '../assets/images/grupo-f.png', 'cars' => 'S10, Ranger, Hillux ou similar', 'category' => 'Grupo F - 4x4', 'price' => 450.55),
         );
 
         $vehicle_index = $_POST['vehicle_index'];
@@ -49,12 +49,12 @@ calculate_reservation();
 function complete_reservation() {
 
     $vehicles = array(
-        array('image' => 'assets/images/grupo-a.png', 'cars' => 'Kwid, Uno, Mobi ou similar', 'category' => 'Grupo A - Compacto', 'price' => 190.89),
-        array('image' => 'assets/images/grupo-b.png', 'cars' => 'Argo, Onix, HB20 ou similar', 'category' => 'Grupo B - Hatch', 'price' => 220.55),
-        array('image' => 'assets/images/grupo-c.png', 'cars' => 'Cronos, Onix plus, HB20s ou similar', 'category' => 'Grupo C - Sedan', 'price' => 280.55),
-        array('image' => 'assets/images/grupo-d.png', 'cars' => 'Renegade, Duster, Creta ou similar', 'category' => 'Grupo D - SUV', 'price' => 350.55),
-        array('image' => 'assets/images/grupo-e.png', 'cars' => 'Chevrolet Spin ou Fiat Doblò', 'category' => 'Grupo E - Mini Van', 'price' => 350.55),
-        array('image' => 'assets/images/grupo-f.png', 'cars' => 'S10, Ranger, Hillux ou similar', 'category' => 'Grupo F - 4x4', 'price' => 450.55),
+        array('image' => '../assets/images/grupo-a.png', 'cars' => 'Kwid, Uno, Mobi ou similar', 'category' => 'Grupo A - Compacto', 'price' => 190.89),
+        array('image' => '../assets/images/grupo-b.png', 'cars' => 'Argo, Onix, HB20 ou similar', 'category' => 'Grupo B - Hatch', 'price' => 220.55),
+        array('image' => '../assets/images/grupo-c.png', 'cars' => 'Cronos, Onix plus, HB20s ou similar', 'category' => 'Grupo C - Sedan', 'price' => 280.55),
+        array('image' => '../assets/images/grupo-d.png', 'cars' => 'Renegade, Duster, Creta ou similar', 'category' => 'Grupo D - SUV', 'price' => 350.55),
+        array('image' => '../assets/images/grupo-e.png', 'cars' => 'Chevrolet Spin ou Fiat Doblò', 'category' => 'Grupo E - Mini Van', 'price' => 350.55),
+        array('image' => '../assets/images/grupo-f.png', 'cars' => 'S10, Ranger, Hillux ou similar', 'category' => 'Grupo F - 4x4', 'price' => 450.55),
     );
 
     ob_start(); ?>

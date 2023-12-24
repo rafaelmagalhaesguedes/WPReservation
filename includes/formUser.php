@@ -2,13 +2,21 @@
 
 session_start();
 
-require 'utils/format_date.php';
-
 function enqueue_display_styles() {
-    wp_enqueue_style('display_styles', plugin_dir_url(__FILE__) . 'assets/styles/display.css');
+    wp_enqueue_style('display_styles', plugin_dir_url(__FILE__) . '../assets/styles/display.css');
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_display_styles');
+
+function format_date($date_string) {
+    $date = new DateTime($date_string);
+    $formatter = new IntlDateFormatter(
+        'pt_BR',
+        IntlDateFormatter::LONG,
+        IntlDateFormatter::NONE
+    );
+    return $formatter->format($date);
+}
 
 function prepare_whatsapp_message($reservation) {
     $message = "Dados do orçamento:\n";
