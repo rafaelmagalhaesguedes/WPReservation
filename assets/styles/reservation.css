@@ -1,0 +1,140 @@
+.container-reservation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 90px;
+    justify-content: space-between;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    color: white;
+}
+
+.process {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.retirada {
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    color: white;
+    background-color: #ff5000;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.local-retirada {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    gap: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.button {
+    height: 45px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.form-category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 360px;
+    height: auto;
+    background-color: white;
+    color: black;
+    text-align: center;
+    
+    border: 1px solid #ff5000;
+}
+
+.card img {
+    width: 200px;
+    height: 120px;
+}
+
+.card p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #ff5000;
+
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.price-vehicle {
+    color: #ff5000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.button-continue {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff5000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+}
